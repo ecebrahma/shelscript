@@ -8,7 +8,7 @@ class MyAction(Action):
         #p = subprocess.Popen(['powershell.exe', 'C:\\temp\\first.ps1'], stdout=sys.stdout)
         print('test')
         #dir_path = os.path.dirname(os.path.realpath("home"))
-        print(dir_path)
+        #print(dir_path)
         ps = "/ps/copy.ps1"
         newfile = ps.replace('.ps1', '.txt')
         print('--------------------------------------------')
