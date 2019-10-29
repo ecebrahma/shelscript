@@ -34,7 +34,7 @@ class MyAction(Action):
         $MB = 1048576
 
         "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
-        with open("/opt/stackstorm/packs/shelscript/actions/ping.ps1", 'rb') as f:
+        with open("/opt/stackstorm/packs/shelscript/actions/Ping.ps1", 'rb') as f:
             getdata = f.read()
             print (getdata)
 
