@@ -20,8 +20,7 @@ class MyAction(Action):
         # print('--------------------------------------------')
         # print (getdata)
         # print ('/////////////////////////////////////')
-        print pkg_resources.resource_filename('shelscript', 'Rush')
-        print pkg_resources.resource_string('shelscript', 'Rush')
+        
         for x in os.listdir('.'):
             print x
             # try:
