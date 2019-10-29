@@ -18,14 +18,16 @@ class MyAction(Action):
         print('--------------------------------------------')
         #print(newfile)
         getdata=None
-        with open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1", 'rb') as f:
-            getdata = f.read()
-            print (getdata)
-
-        s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
-        r = s.run_cmd('ipconfig', ['/all'])
-        r = s.run_ps(getdata)
-        print(r.std_out)
+        # with open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1", 'rb') as f:
+        #     getdata = f.read()
+        #     print (getdata)
+        file1=codecs.open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1",'r')
+        getdata = file1.readlines()
+        print (getdata)
+        # s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
+        # r = s.run_cmd('ipconfig', ['/all'])
+        # r = s.run_ps(getdata)
+        # print(r.std_out)
         #file1=open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1","r")
         
         #file1=codecs.open(dir_path,'r')
