@@ -18,7 +18,7 @@ class MyAction(Action):
         print('--------------------------------------------')
         #print(newfile)
         #file1=codecs.open(dir_path,"r")
-        file1 = codecs.open(dir_path, 'r', encoding='utf-8')
+        file1 = codecs.open(dir_path, 'r')
         getdata = file1.readlines()
         #lines[line_num] = text
         #f.close()
