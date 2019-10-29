@@ -20,8 +20,8 @@ class MyAction(Action):
         # print('--------------------------------------------')
         # print (getdata)
         # print ('/////////////////////////////////////')
-        print pkg_resources.resource_filename('resources.bands', 'Rush')
-        print pkg_resources.resource_string('resources.bands', 'Rush')
+        print pkg_resources.resource_filename('powershell.py', 'Rush')
+        print pkg_resources.resource_string('powershell.py', 'Rush')
         for x in os.listdir('.'):
             print x
             # try:
