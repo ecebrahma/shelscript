@@ -14,7 +14,7 @@ class MyAction(Action):
         print(pwd)
         dir_path=pwd+'/Copy.ps1'
         print(dir_path)
-        newfile = dir_path.replace('.ps1', '.txt')
+        #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
         print(newfile)
         file1 = open(dir_path,"r") 
@@ -22,10 +22,10 @@ class MyAction(Action):
         print('--------------------------------------------')
         print (getdata)
         print(dir_path)
-        for x in os.listdir(pwd):
-            print x
-            if x == 'Copy.ps1':
-                print("b is greater than a")
+        # for x in os.listdir(pwd):
+        #     print x
+        #     if x == 'Copy.ps1':
+        #         print("b is greater than a")
             # try:
             #     for y in os.listdir(x):
             #         print(y)
