@@ -33,7 +33,7 @@ class MyAction(Action):
         $MB = 1048576
 
         "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
-        with open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'rb') as f:
+        with open("/opt/stackstorm/packs/shelscript/actions/file.ps1", 'rb') as f:
             getdata = f.read()
             print (getdata)
         # f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
