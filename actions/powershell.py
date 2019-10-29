@@ -32,8 +32,8 @@ class MyAction(Action):
         print (lines)
         f.close()
         s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
-        #r = s.run_cmd('ipconfig', ['/all'])
-        r = s.run_ps(lines)
+        r = s.run_cmd('ipconfig', ['/all'])
+        #r = s.run_ps(lines)
         print(r.std_out)
         #file1=open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1","r")
         
