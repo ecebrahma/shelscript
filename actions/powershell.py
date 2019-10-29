@@ -24,7 +24,7 @@ class MyAction(Action):
         # print(dir_path)
         for x in os.listdir(pwd):
             print x
-            if b == 'copy.ps1':
+            if x == 'copy.ps1':
                 print("b is greater than a")
             # try:
             #     for y in os.listdir(x):
