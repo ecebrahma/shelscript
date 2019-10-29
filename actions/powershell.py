@@ -12,7 +12,11 @@ class MyAction(Action):
         #print(dir_path)
         pwd = os.path.dirname(__file__)
         print(pwd)
-        ps = "/ps/copy.ps1"
+        fileps = pwd+"/ps/copy.ps1"
+        print('--------------------------------------------')
+        print(fileps)
+        print('--------------------------------------------')
+        ps = pwd+"/ps/copy.ps1"
         print(ps)
         newfile = ps.replace('.ps1', '.txt')
         print('--------------------------------------------')
