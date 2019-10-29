@@ -19,9 +19,8 @@ class MyAction(Action):
         #print(newfile)
         #file1=codecs.open(dir_path,"r")
         file1 = codecs.open(dir_path, 'r')
-        #getdata = file1.read()
-        getdata = file1.readlines()
-        getdata=getdata.encode('ascii')
+        getdata = file1.read()
+        #getdata = file1.readlines()
         #getdata=getdata.decode('base64', 'strict') 
         #lines[line_num] = text
         #f.close()
