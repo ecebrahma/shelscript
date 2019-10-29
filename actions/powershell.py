@@ -4,6 +4,7 @@ from st2common.runners.base_action import Action
 import ssl
 import os
 import codecs
+import winrm
 class MyAction(Action):
     def run(self):
         #p = subprocess.Popen(['powershell.exe', 'C:\\temp\\first.ps1'], stdout=sys.stdout)
