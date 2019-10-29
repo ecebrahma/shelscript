@@ -12,7 +12,8 @@ class MyAction(Action):
         #print(dir_path)
         pwd = os.path.dirname(__file__)
         print(pwd)
-        
+        dir_path=pwd+'\copy.ps1'
+        print(dir_path)
         for x in os.listdir(pwd):
             print x
             # try:
