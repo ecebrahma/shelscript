@@ -16,12 +16,12 @@ class MyAction(Action):
         print(dir_path)
         newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
-        # print(newfile)
-        # file1 = open(dir_path,"r") 
-        # getdata=file1.read()
-        # print('--------------------------------------------')
-        # print (getdata)
-        # print(dir_path)
+        print(newfile)
+        file1 = open(dir_path,"r") 
+        getdata=file1.read()
+        print('--------------------------------------------')
+        print (getdata)
+        print(dir_path)
         for x in os.listdir(__file__):
             print x
             # try:
