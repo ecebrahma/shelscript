@@ -16,7 +16,7 @@ class MyAction(Action):
         print(dir_path)
         #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
-        print(newfile)
+        #print(newfile)
         file1 = open(dir_path,"r") 
         getdata=file1.read()
         print('--------------------------------------------')
