@@ -1,1 +1,1 @@
-winrm
+pywinrm
