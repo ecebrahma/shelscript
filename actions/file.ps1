@@ -1,3 +1,1 @@
-Get-WmiObject -Class Win32_OperatingSystem –ComputerName localhost
-
-Select-Object -Property CSName,LastBootUpTime
+Get-Process | Get-Member | Out-Host -Paging
