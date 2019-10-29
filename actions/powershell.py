@@ -17,19 +17,22 @@ class MyAction(Action):
         #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
         #print(newfile)
-        file1=open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1","r")
+        with open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1", 'rb') as f:
+            getdata = f.read()
+            print (getdata)
+        #file1=open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1","r")
         
         #file1=codecs.open(dir_path,'r')
         #file1 = codecs.open(dir_path, 'r',encoding=sys.getfilesystemencoding())
         #getdata = file1.read()
-        getdata = file1.read()
+        #getdata = file1.read()
         #getdata=getdata.decode('base64', 'strict') 
         #lines[line_num] = text
         #f.close()
         # file1 = open(dir_path,"r") 
         #getdata=file1.read()
         print('--------------------------------------------')
-        print (getdata)
+        #print (getdata)
         
         print ('/////////////////////////////////////')
         # for root, dirs, files in os.walk("home"):
