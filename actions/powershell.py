@@ -12,9 +12,9 @@ class MyAction(Action):
         #dir_path = os.path.dirname(os.path.realpath("home"))
         #print(dir_path)
         pwd = os.path.dirname(__file__)
-        print(pwd)
+        #print(pwd)
         dir_path=pwd+'Copy.ps1'
-        print(dir_path)
+        #print(dir_path)
         #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
         #print(newfile)
@@ -36,10 +36,10 @@ class MyAction(Action):
         "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
         with open("/opt/stackstorm/packs/shelscript/actions/file.ps1", 'rb') as f:
             getdata = f.read()
-            print (getdata)
+            #print (getdata)
 
         getdata=getdata.replace("'\'", "")
-        print(getdata)
+        #print(getdata)
         # f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
         # lines = f.readlines()
         # #lines=lines.replace("/", "")
