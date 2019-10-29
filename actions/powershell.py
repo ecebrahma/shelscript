@@ -13,17 +13,19 @@ class MyAction(Action):
         pwd = os.path.dirname(__file__)
         print(pwd)
         dir_path=pwd+'/copy.ps1'
-        print(dir_path)
-        newfile = dir_path.replace('.ps1', '.txt')
-        print('--------------------------------------------')
-        print(newfile)
-        file1 = open(dir_path,"r") 
-        getdata=file1.read()
-        print('--------------------------------------------')
-        print (getdata)
-        print(dir_path)
+        # print(dir_path)
+        # newfile = dir_path.replace('.ps1', '.txt')
+        # print('--------------------------------------------')
+        # print(newfile)
+        # file1 = open(dir_path,"r") 
+        # getdata=file1.read()
+        # print('--------------------------------------------')
+        # print (getdata)
+        # print(dir_path)
         for x in os.listdir(__file__):
             print x
+            if b == 'copy.ps1':
+                print("b is greater than a")
             # try:
             #     for y in os.listdir(x):
             #         print(y)
