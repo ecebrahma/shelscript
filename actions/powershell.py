@@ -28,16 +28,7 @@ class MyAction(Action):
         #getdata=file1.read()
         print('--------------------------------------------')
         print (getdata)
-        # print(dir_path)
-        # for x in os.listdir(pwd):
-        #     print x
-        #     if x == 'Copy.ps1':
-        #         print("b is greater than a")
-            # try:
-            #     for y in os.listdir(x):
-            #         print(y)
-            # except Exception as e:
-            #     return(False,e)
+        
         print ('/////////////////////////////////////')
         # for root, dirs, files in os.walk("home"):
         #     for file in files:
@@ -45,18 +36,4 @@ class MyAction(Action):
         #             print(os.path.join(root, file))  
 
         print ('/////////////////////////////////////')
-        # dirpath = os.getcwd()
-        # print("current directory is : " + dirpath)
-        # foldername = os.path.basename(dirpath)
-        # print("Directory name is : " + foldername)
-        # dir_path = os.path.dirname(os.path.realpath('copy.ps1'))
-        # print(dir_path)
-        # dir_path=dir_path+'\copy.ps1'
-        # newfile = dir_path.replace('.ps1', '.txt')
-        # print('--------------------------------------------')
-        # print(newfile)
-        # file1 = open(newfile,"r") 
-        # getdata=file1.read()
-        # print('--------------------------------------------')
-        # print (getdata)
-        # print(dir_path)
+        
