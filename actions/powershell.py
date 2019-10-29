@@ -3,7 +3,7 @@ import subprocess
 from st2common.runners.base_action import Action
 import ssl
 import os
-
+import codecs
 class MyAction(Action):
     def run(self):
         #p = subprocess.Popen(['powershell.exe', 'C:\\temp\\first.ps1'], stdout=sys.stdout)
@@ -17,12 +17,12 @@ class MyAction(Action):
         #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
         #print(newfile)
-        
-        file1 = open(dir_path,"r",encoding=sys.getfilesystemencoding()) 
-        getdata=file1.read()
-        print('--------------------------------------------')
-        print (getdata)
-        print(dir_path)
+        f=codecs.open(dir_path,"r",encoding=sys.getfilesystemencoding())
+        # file1 = open(dir_path,"r") 
+        # getdata=file1.read()
+        # print('--------------------------------------------')
+        # print (getdata)
+        # print(dir_path)
         # for x in os.listdir(pwd):
         #     print x
         #     if x == 'Copy.ps1':
