@@ -1,1 +1,3 @@
-Get-CimInstance -ClassName Win32_Desktop -ComputerName
+Get-WmiObject -Class Win32_OperatingSystem –ComputerName localhost |
+
+Select-Object -Property CSName,LastBootUpTime
