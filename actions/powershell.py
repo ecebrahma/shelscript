@@ -18,7 +18,7 @@ class MyAction(Action):
         print('--------------------------------------------')
         #print(newfile)
         #file1=codecs.open(dir_path,"r")
-        file1 = codecs.open(dir_path, 'r')
+        file1 = codecs.open(dir_path, 'r',encoding=sys.getfilesystemencoding())
         getdata = file1.read()
         #getdata = file1.readlines()
         #getdata=getdata.decode('base64', 'strict') 
