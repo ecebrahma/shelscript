@@ -36,7 +36,7 @@ class MyAction(Action):
         "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
         with open("/opt/stackstorm/packs/shelscript/actions/file.ps1", 'rb') as f:
             getdata = f.read()
-            #print (getdata)
+            print (getdata)
 
         getdata=getdata.replace("'\'", "")
         #print(getdata)
