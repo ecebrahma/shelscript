@@ -18,6 +18,7 @@ class MyAction(Action):
         print('--------------------------------------------')
         #print(newfile)
         #file1=open(dir_path,"r")
+        error_handling = sys.argv[1]
         file1=codecs.open(dir_path, 'r',
                      encoding='ascii',
                      errors=error_handling)
