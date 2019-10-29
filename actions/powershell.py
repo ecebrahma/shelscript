@@ -27,6 +27,7 @@ class MyAction(Action):
         # print (getdata)
         # for x in getdata:
         #    print(x.decode('utf-8'))
+        getdata=None
         ps_script = """$strComputer = $Host
         Clear
         $RAM = WmiObject Win32_ComputerSystem
@@ -36,6 +37,9 @@ class MyAction(Action):
         with open("/opt/stackstorm/packs/shelscript/actions/file.ps1", 'rb') as f:
             getdata = f.read()
             print (getdata)
+
+        getdata=getdata.replace("'\'", "")
+        print(getdata)
         # f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
         # lines = f.readlines()
         # #lines=lines.replace("/", "")
