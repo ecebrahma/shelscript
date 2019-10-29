@@ -22,7 +22,7 @@ class MyAction(Action):
         # print('--------------------------------------------')
         # print (getdata)
         # print(dir_path)
-        for x in os.listdir(__file__):
+        for x in os.listdir(pwd):
             print x
             if b == 'copy.ps1':
                 print("b is greater than a")
