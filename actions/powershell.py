@@ -10,7 +10,7 @@ class MyAction(Action):
         print('test')
         #dir_path = os.path.dirname(os.path.realpath("home"))
         #print(dir_path)
-        pwd = os.path.dirname(__file__)
+        pwd = os.path.dirname("ps")
         print(pwd)
         fileps = pwd+"/ps/copy.ps1"
         print('--------------------------------------------')
