@@ -33,18 +33,20 @@ class MyAction(Action):
         $MB = 1048576
 
         "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
-
-        f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
-        lines = f.readlines()
-        #lines=lines.replace("/", "")
-        lines = lines.replace(',', '')
-        lines =lines.replace("'", "")
-        print (lines)
-        f.close()
-        s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
-        r = s.run_cmd('ipconfig', ['/all'])
-        #r = s.run_ps(lines)
-        print(r.std_out)
+        with open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'rb') as f:
+            getdata = f.read()
+            print (getdata)
+        # f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
+        # lines = f.readlines()
+        # #lines=lines.replace("/", "")
+        # lines = lines.replace(",", "")
+        # lines =lines.replace("'", "")
+        # print (lines)
+        # f.close()
+        # s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
+        # r = s.run_cmd('ipconfig', ['/all'])
+        # #r = s.run_ps(lines)
+        # print(r.std_out)
         #file1=open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1","r")
         
         #file1=codecs.open(dir_path,'r')
