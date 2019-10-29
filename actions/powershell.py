@@ -7,8 +7,16 @@ class MyAction(Action):
     def run(self):
         #p = subprocess.Popen(['powershell.exe', 'C:\\temp\\first.ps1'], stdout=sys.stdout)
         print('test')
-        dir_path = os.path.dirname(os.path.realpath("home"))
+        #dir_path = os.path.dirname(os.path.realpath("home"))
         print(dir_path)
+        ps = "/ps/copy.ps1"
+        newfile = ps.replace('.ps1', '.txt')
+        print('--------------------------------------------')
+        print(newfile)
+        file1 = open(newfile,"r") 
+        getdata=file1.read()
+        print('--------------------------------------------')
+        print (getdata)
         print ('/////////////////////////////////////')
         for x in os.listdir('.'):
             print x
