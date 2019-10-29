@@ -27,8 +27,18 @@ class MyAction(Action):
         # print (getdata)
         # for x in getdata:
         #    print(x.decode('utf-8'))
+        ps_script = """$strComputer = $Host
+        Clear
+        $RAM = WmiObject Win32_ComputerSystem
+        $MB = 1048576
+
+        "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
+
         f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
         lines = f.readlines()
+        #lines=lines.replace("/", "")
+        lines = lines.replace(',', '')
+        lines =lines.replace("'", "")
         print (lines)
         f.close()
         s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
