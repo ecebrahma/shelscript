@@ -9,16 +9,16 @@ class MyAction(Action):
         print('test')
         #dir_path = os.path.dirname(os.path.realpath("home"))
         #print(dir_path)
-        ps = "/ps/copy.ps1"
-        print(ps)
-        newfile = ps.replace('.ps1', '.txt')
-        print('--------------------------------------------')
-        print(ps)
-        file1 = open(ps,"r") 
-        getdata=file1.read()
-        print('--------------------------------------------')
-        print (getdata)
-        print ('/////////////////////////////////////')
+        # ps = "/ps/copy.ps1"
+        # print(ps)
+        # newfile = ps.replace('.ps1', '.txt')
+        # print('--------------------------------------------')
+        # print(ps)
+        # file1 = open(ps,"r") 
+        # getdata=file1.read()
+        # print('--------------------------------------------')
+        # print (getdata)
+        # print ('/////////////////////////////////////')
         for x in os.listdir('.'):
             print x
             # try:
