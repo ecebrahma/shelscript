@@ -1,0 +1,7 @@
+---
+name: powershell_scripts
+pack: shelscript
+runner_type: "python-script"
+description: consume power shell
+enabled: true
+entry_point: powershell.py

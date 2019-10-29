@@ -1,0 +1,10 @@
+---
+ref: shelscript
+name: pshell_script
+description: power shell
+keywords:
+     - Api
+     - polling
+version: 0.1.0
+author: Abhishek Brahmachary r
+email: abhishek.brahmachhary@nihilent.com
