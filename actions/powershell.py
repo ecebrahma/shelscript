@@ -22,7 +22,7 @@ class MyAction(Action):
         #file1=codecs.open(dir_path,'r')
         #file1 = codecs.open(dir_path, 'r',encoding=sys.getfilesystemencoding())
         #getdata = file1.read()
-        getdata = file1.read()
+        getdata = file1.readline()
         #getdata=getdata.decode('base64', 'strict') 
         #lines[line_num] = text
         #f.close()
