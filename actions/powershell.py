@@ -27,7 +27,7 @@ class MyAction(Action):
         # print (getdata)
         # for x in getdata:
         #    print(x.decode('utf-8'))
-        f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.ps1", 'r')
+        f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
         lines = f.readlines()
         print (lines)
         f.close()
