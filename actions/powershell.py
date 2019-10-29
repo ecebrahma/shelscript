@@ -17,7 +17,7 @@ class MyAction(Action):
         #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
         #print(newfile)
-        file1=codecs.open(dir_path,"r",encoding=sys.getfilesystemencoding())
+        file1=codecs.open(dir_path,"r")
         # file1 = open(dir_path,"r") 
         getdata=file1.read()
         print('--------------------------------------------')
