@@ -12,7 +12,7 @@ class MyAction(Action):
         #print(dir_path)
         pwd = os.path.dirname(__file__)
         print(pwd)
-        dir_path=pwd+'/Copy.ps1'
+        dir_path=pwd+'Copy.ps1'
         print(dir_path)
         #newfile = dir_path.replace('.ps1', '.txt')
         print('--------------------------------------------')
@@ -22,7 +22,7 @@ class MyAction(Action):
         #file1=codecs.open(dir_path,'r')
         #file1 = codecs.open(dir_path, 'r',encoding=sys.getfilesystemencoding())
         #getdata = file1.read()
-        getdata = file1.readlines()
+        getdata = file1.read()
         #getdata=getdata.decode('base64', 'strict') 
         #lines[line_num] = text
         #f.close()
