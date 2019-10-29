@@ -2,7 +2,8 @@ import sys
 import subprocess
 from st2common.runners.base_action import Action
 import ssl
-import os 
+import os
+import pkg_resources
 class MyAction(Action):
     def run(self):
         #p = subprocess.Popen(['powershell.exe', 'C:\\temp\\first.ps1'], stdout=sys.stdout)
@@ -19,6 +20,8 @@ class MyAction(Action):
         # print('--------------------------------------------')
         # print (getdata)
         # print ('/////////////////////////////////////')
+        print pkg_resources.resource_filename('resources.bands', 'Rush')
+        print pkg_resources.resource_string('resources.bands', 'Rush')
         for x in os.listdir('.'):
             print x
             # try:
