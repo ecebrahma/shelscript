@@ -19,55 +19,24 @@ class MyAction(Action):
         print('--------------------------------------------')
         #print(newfile)
         getdata=None
-        # with open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1", 'rb') as f:
-        #     getdata = f.read()
-        #     print (getdata)
-        # file1=codecs.open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1",'r')
-        # getdata = file1.readlines()
-        # print (getdata)
-        # for x in getdata:
-        #    print(x.decode('utf-8'))
-
-        getdata=None
-        
         with open("/opt/stackstorm/packs/shelscript/actions/Ping.ps1", 'rb') as f:
             getdata = f.read()
             print (getdata)
 
         getdata=getdata.replace("'\'", "")
-        #print(getdata)
-        # f = codecs.open("/opt/stackstorm/packs/shelscript/actions/file.txt", 'r')
-        # lines = f.readlines()
-        # #lines=lines.replace("/", "")
-        # lines = lines.replace(",", "")
-        # lines =lines.replace("'", "")
-        # print (lines)
-        # f.close()
+       
         s = winrm.Session('172.16.2.33', auth=('abhishekb@nihilentanalytics.com', 'M1cr7123'), transport='ntlm')
         print('--------------------------------------------')
         #r = s.run_cmd('ipconfig', ['/all'])
         r = s.run_ps(getdata)
         print(r.std_out)
+
         print('--------------------------------------------')
-        #file1=open("/opt/stackstorm/packs/shelscript/actions/Copy.ps1","r")
-        
-        #file1=codecs.open(dir_path,'r')
-        #file1 = codecs.open(dir_path, 'r',encoding=sys.getfilesystemencoding())
-        #getdata = file1.read()
-        #getdata = file1.read()
-        #getdata=getdata.decode('base64', 'strict') 
-        #lines[line_num] = text
-        #f.close()
-        # file1 = open(dir_path,"r") 
-        #getdata=file1.read()
         print('--------------------------------------------')
         #print (getdata)
         
         print ('/////////////////////////////////////')
-        # for root, dirs, files in os.walk("home"):
-        #     for file in files:
-        #         if file.endswith("."):
-        #             print(os.path.join(root, file))  
+         
 
         print ('/////////////////////////////////////')
         
