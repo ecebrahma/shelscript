@@ -27,13 +27,9 @@ class MyAction(Action):
         # print (getdata)
         # for x in getdata:
         #    print(x.decode('utf-8'))
-        getdata=None
-        ps_script = """$strComputer = $Host
-        Clear
-        $RAM = WmiObject Win32_ComputerSystem
-        $MB = 1048576
 
-        "Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
+        getdata=None
+        
         with open("/opt/stackstorm/packs/shelscript/actions/Ping.ps1", 'rb') as f:
             getdata = f.read()
             print (getdata)

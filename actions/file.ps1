@@ -1,1 +1,1 @@
-Get-Process | Get-Member | Out-Host -Paging
+Write-Host "Hello, World!"
