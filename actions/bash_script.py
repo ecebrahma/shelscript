@@ -11,7 +11,7 @@ class MyAction(Action):
         #print(pwd)
         dir_path=pwd+"\\test.sh"
         #print(dir_path)
-    
+        print(dir_path)
         user='ssadmin@vnext.nihilentanalytics.com'
         host='192.168.0.4' 
         password='C1sc0@12345!@#$%'
