@@ -1,1 +1,1 @@
-mkdir test
+pwd
