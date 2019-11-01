@@ -9,7 +9,7 @@ class MyAction(Action):
         #pwd = os.path.dirname(os.path.realpath('test.sh'))
         pwd = os.path.dirname(__file__)
         #print(pwd)
-        dir_path=pwd+"\\test.sh"
+        dir_path=pwd+"/test.sh"
         #print(dir_path)
         print(dir_path)
         user='ssadmin@vnext.nihilentanalytics.com'
