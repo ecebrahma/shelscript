@@ -1,2 +1,2 @@
-#mkdir testabhi
-pwd
+mkdir testabhi
+#pwd
