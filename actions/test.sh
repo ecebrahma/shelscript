@@ -1,1 +1,1 @@
-mkdir test abhi
+mkdir test
