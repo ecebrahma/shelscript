@@ -29,7 +29,7 @@ class MyAction(Action):
         s = winrm.Session('172.16.3.203', auth=('administrator@gso.internal', 'C1sc0@123'), transport='ntlm')
         print('--------------------------------------------')
         #r = s.run_cmd('ipconfig', ['/all'])
-        r = s.run_ps(getdata,'HELLO', 'WORLD')
+        r = s.run_ps(getdata)
         print(r.std_out)
 
         print('--------------------------------------------')

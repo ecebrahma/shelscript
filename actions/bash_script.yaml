@@ -1,0 +1,7 @@
+---
+name: bash_script
+pack: shelscript
+runner_type: "python-script"
+description: call bash scripts
+enabled: true
+entry_point: bash_script.py
