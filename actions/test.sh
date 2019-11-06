@@ -1,3 +1,2 @@
 #pwd
-STRING={}
-echo $STRING
+mkdir {}
