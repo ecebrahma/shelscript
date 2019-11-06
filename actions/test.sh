@@ -1,5 +1,10 @@
-#!/bin/bash
-# set the STRING variable
-STRING={}
-# print the contents of the variable on screen
-echo $STRING
+#!/bin/sh
+# This is a comment!
+echo {}       # This is a comment, too!
+echo {}
+echo {}
+echo {}
+echo {}
+echo {}
+echo {}
+echo {}

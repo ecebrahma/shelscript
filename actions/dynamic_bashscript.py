@@ -26,7 +26,7 @@ class MyAction(Action):
             #print (getdata)
         getdata1=getdata.decode("utf-8")
         #print(getdata1)
-        checkfile=getdata1.format(shell_param)
+        checkfile=getdata1.format('hello world','hello world','hello world','hello world','hello world','hello world','hello world','hello world')
         print(checkfile)
         stdin, stdout, stderr = client.exec_command(checkfile)
         print(stdout)
