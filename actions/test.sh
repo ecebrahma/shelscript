@@ -1,2 +1,2 @@
-mkdir testabhi
+mkdir {}
 #pwd

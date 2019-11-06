@@ -1,0 +1,13 @@
+---
+name: dynamic_bashscript
+pack: shelscript
+runner_type: "python-script"
+description: call bash scripts dynamically
+enabled: true
+entry_point: dynamic_bashscript.py
+parameters: 
+    parameters:
+      type: "string"
+      description: "create directory(enter directory name eg.abbhishek)"
+      required: true
+      position: 0
