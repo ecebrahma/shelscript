@@ -10,7 +10,7 @@ class MyAction(Action):
         #print(pwd)
         dir_path=pwd+"/test.sh"
         #print(dir_path)
-        print(dir_path)
+        #print(dir_path)
         user='ssadmin@vnext.nihilentanalytics.com'
         host='192.168.0.4' 
         password='C1sc0@12345!@#$%'
@@ -23,17 +23,17 @@ class MyAction(Action):
         client.connect('192.168.0.4', username='ssadmin', password='C1sc0@12345!@#$%')
         with open(dir_path, 'rb') as f:
             getdata = f.read()
-            print (getdata)
+            #print (getdata)
         getdata1=getdata.decode("utf-8")
-        print(getdata1)
+        #print(getdata1)
         checkfile=getdata1.format(shell_param)
         stdin, stdout, stderr = client.exec_command(checkfile)
         print(stdout)
-        print("############################")
+        #print("############################")
         print(stderr)
-        print("******************************")
+        #print("******************************")
         print(stdin)
-        print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        #print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 
 
 
