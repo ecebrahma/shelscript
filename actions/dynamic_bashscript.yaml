@@ -6,7 +6,7 @@ description: call bash scripts dynamically
 enabled: true
 entry_point: dynamic_bashscript.py
 parameters: 
-    parameters:
+    shell_param:
       type: "string"
       description: "create directory(enter directory name eg.abbhishek)"
       required: true

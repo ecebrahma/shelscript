@@ -4,7 +4,7 @@ import ssl
 import os
 import paramiko
 class MyAction(Action):
-    def run(self):
+    def run(self,shell_param):
          #pwd = os.path.dirname(os.path.realpath('test.sh'))
         pwd = os.path.dirname(__file__)
         #print(pwd)
@@ -26,7 +26,7 @@ class MyAction(Action):
             print (getdata)
         getdata1=getdata.decode("utf-8")
         #print(getdata1)
-        checkfile=getdata1.format('nawed')
+        checkfile=getdata1.format(shell_param)
         stdin, stdout, stderr = client.exec_command(getdata)
         print(stdout)
         print("############################")
