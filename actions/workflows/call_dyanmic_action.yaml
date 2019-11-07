@@ -1,0 +1,33 @@
+version: 1.0
+
+input:
+  - bash_shell
+  - dynamic_input
+
+tasks:
+  task1:
+    action: shelscript.dynamic_bashscript
+    input:
+      shell_param: <% ctx().dynamic_input %>
+      timeout: 3600
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - result: "{{ result() }}"
+        do:
+          - finish_succeeded
+      - when: <% failed() %>
+        publish:
+          - result: "{{ result() }}"
+        do:
+          - finish_failed
+
+  finish_succeeded:
+    action: core.echo
+    input:
+      message: "Windows vm created successfully"
+
+  finish_failed:
+    action: core.echo
+    input:
+      message: "Cannot create Windows vm" 
