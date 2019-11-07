@@ -1,0 +1,21 @@
+---
+name: call_dyanmic_action
+pack: shelscript
+description: Create windows vm using iso
+runner_type: orquesta
+entry_point: workflows/call_dyanmic_action.yaml
+enabled: true
+parameters:
+  bash_shell:
+    type: "string"
+    description: "Type of os(eg:windows/ubuntu)"
+    required: true
+    position: 8
+    enum:
+      - bashshell1.sh
+      - bashshell2.sh
+  dynamic_input:
+    type: string
+    description: Amount of Ram in GB
+    required: true
+    position: 1

@@ -1,0 +1,10 @@
+version: 1.0
+
+input:
+  - bash_shell
+  - dynamic_input
+
+tasks:
+  task1:
+    action: "{{ ctx().bash_shell }}"
+    input: "{{ ctx().dynamic_input }}"
