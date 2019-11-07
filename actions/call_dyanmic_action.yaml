@@ -12,7 +12,7 @@ parameters:
     required: true
     position: 0
     enum:
-      - shelcript/dynamic_bashscript
+      - dynamic_bashscript
       - shelcript.dynamic_bashscript1
   dynamic_input:
     type: string
