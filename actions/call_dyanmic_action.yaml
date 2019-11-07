@@ -10,7 +10,7 @@ parameters:
     type: "string"
     description: "Type of os(eg:windows/ubuntu)"
     required: true
-    position: 8
+    position: 0
     enum:
       - bashshell1.sh
       - bashshell2.sh
