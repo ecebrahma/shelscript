@@ -12,8 +12,8 @@ parameters:
     required: true
     position: 0
     enum:
-      - bashshell1.sh
-      - bashshell2.sh
+      - shelcript.dynamic_bashscript
+      - shelcript.dynamic_bashscript1
   dynamic_input:
     type: string
     description: Amount of Ram in GB
