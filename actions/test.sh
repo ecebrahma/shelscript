@@ -1,4 +1,4 @@
 #!/bin/sh
 # This is a comment!
-echo {}       # This is a comment, too!
+mkdir {}     # This is a comment, too!
 
