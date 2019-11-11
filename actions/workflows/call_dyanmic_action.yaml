@@ -1,5 +1,7 @@
 version: 1.0
 
+description: A Workflow to create vm using iso.
+
 input:
   - bash_shell
   - dynamic_input
