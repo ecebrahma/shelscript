@@ -1,4 +1,8 @@
-#!/bin/sh
-# This is a comment!
-echo {}       # This is a comment, too!
+#!/bin/bash
+
+# Add two numeric value
+((sum={}+{}))
+
+#Print the result
+echo $sum
 
