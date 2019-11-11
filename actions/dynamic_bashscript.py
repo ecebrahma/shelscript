@@ -42,3 +42,4 @@ class MyAction(Action):
             print (line.strip('\n'))
 
         client.close()
+        return (True,stdout)
