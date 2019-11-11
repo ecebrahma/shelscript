@@ -5,6 +5,7 @@ import os
 import paramiko
 class MyAction(Action):
     def run(self,shell_param):
+        print(shell_param)
          #pwd = os.path.dirname(os.path.realpath('test.sh'))
         pwd = os.path.dirname(__file__)
         #print(pwd)
